@@ -1,5 +1,14 @@
-const selectComponent = components => components[Math.floor(Math.random() * components.length)];
+const selectComponent = componentArray => componentArray[Math.floor(Math.random() * componentArray.length)];
 
-const messageComponents = [['Oh my,', 'The horror,', "I can't believe it,"], ['the oven', 'your mother', 'the train'], ['is on fire.', 'is here.', 'has crashed.']];
+const generateMessage = componentArrays => {
+    let message = '';
+    for (const array of componentArrays) {
+        message += selectComponent(array)
+    }
+    return message;
+};
 
-console.log(selectComponent(messageComponents[0]));
+const messageComponents = [['Oh my, ', "It's terrible,", "I can't believe it, ", "Stop, "], ['the oven ', 'your mother ', 'the train ', 'the goverment '], 
+['is on fire.', 'is here.', 'has crashed.', 'is attacking.']];
+
+console.log(generateMessage(messageComponents));
