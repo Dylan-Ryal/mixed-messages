@@ -11,8 +11,8 @@ Generates a randomized message from a bank of fixed components. Used as practice
 Run the `main.js` file in a command line using `node main.js`. Require **node.js** installation.
 
 ## Project Status
-*Compelete*.
+*Complete*.
 
 ## Improvements
 + Read words from a dictionary.
-+ Output set number of sentences / sentence length.
++ Output set number of sentences and/or set sentence length.
